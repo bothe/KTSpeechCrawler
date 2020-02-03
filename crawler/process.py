@@ -6,11 +6,11 @@ import io
 import termcolor
 import re
 from tqdm import tqdm
-from crawler.youtube_helpers import get_hash, getsize
-from crawler.utils import extract_audio_part_segment
-from crawler.filters import Pipeline, OverlappingSubtitlesRemover, SubtitleCaptionTextFilter, SubtitleMerger,\
+from youtube_helpers import get_hash, getsize
+from utils import extract_audio_part_segment
+from filters import Pipeline, OverlappingSubtitlesRemover, SubtitleCaptionTextFilter, SubtitleMerger,\
     CaptionLengthFilter, CaptionRegexMatcher, CaptionDurationFilter, CaptionLeaveOnlyAlphaNumCharacters, CaptionNormalizer
-from crawler.youtube_helpers import load_all_subtitles
+from youtube_helpers import load_all_subtitles
 
 
 class RESULT:
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     video_file = sys.argv[1]
     target_dir = sys.argv[2]
 
-    subtitle_file = video_file.replace('.mp4', '.en.vtt')
+    subtitle_file = video_file.replace('.mp4', '.mr.vtt')
     info_file = video_file.replace('.mp4', '.info.json')
     overall_info = {"sub_file" : subtitle_file, "info" : info_file}
     log_file = open("./log.json", "a+")

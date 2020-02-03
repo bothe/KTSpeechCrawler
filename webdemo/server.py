@@ -47,7 +47,7 @@ def render_random():
         metadata_file = d["meta"]
         with open(metadata_file, "r") as f:
             metadata = json.loads(f.read())
-        shutil.copy( wav_file, os.path.join("./static", os.path.basename(wav_file)) )
+        shutil.copy( wav_file, os.path.join("./resulting_samples", os.path.basename(wav_file)) )
         res.append({
             "wav" : os.path.basename(wav_file),
             "txt" : open(txt).read().strip(),

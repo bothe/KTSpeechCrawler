@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+intermediate_data/
+manually_added_vedios/
+resulting_samples/

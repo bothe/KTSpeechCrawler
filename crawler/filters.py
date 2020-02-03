@@ -1,5 +1,5 @@
 import re
-from crawler.youtube_helpers import remove_overlapping_subtitles, \
+from youtube_helpers import remove_overlapping_subtitles, \
     normalize_subtitle, leave_alphanum_characters, merge_subtitles, _get_transcript_google_web_asr
 import random
 from Levenshtein import ratio

@@ -6,7 +6,7 @@ from webvtt import WebVTT
 import copy
 import tempfile
 import shutil
-from crawler.utils import extract_audio_part_segment, get_ts_seconds
+from utils import extract_audio_part_segment, get_ts_seconds
 from path import Path
 import datetime
 # from datetime import datetime
